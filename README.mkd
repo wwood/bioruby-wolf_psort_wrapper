@@ -1,24 +1,26 @@
-bio-wolf_psort_wrapper
-======================
+```bio-wolf_psort_wrapper```
+============================
 
 A wrapper around the protein sub-cellular localisation program WoLF PSORT, so that it can be run locally. More information is about the underlying program is available from http://wolfpsort.org/aboutWoLF_PSORT.html.en and on the same site the executables required for this package to run are provided.
 
+```ruby
     require 'bio-wolf_psort_wrapper'
     wolf_psort_result = Bio::PSORT::WoLF_PSORT::Wrapper.new.run(
       'MTQVPPVTFQQYGPVITTSAGNPVDDNQNSVTAGPYGPAILSNFHLIDKLAHFDRERIPE
-RVVHAKGGGAFGYFEVTHDITRFCKAKLFEKIGKRTPVFARFSTVAGESGSADTRRDPRG
-FALKFYTEEGNWDMVGNNTPIFFVRDAIKFPDFIHTQKRHPQTHLHDPNMVWDFFSLVPE
-SVHQVTFLYTDRGTPDGFRHMNGYGSHTFKFINKDNEAFYVKWHFKTNQGIKNLNRQRAK
-ELESEDPDYAVRDLFNAIAKREFPSWTFCIQVMPLKDAETYKWNVFDVTKVWPHGDYPLI
-PVGRLVLDRNPENYFQDVEQAAFAPAHMVPGIEPSEDRMLQGRMFSYIDTHRHRLGANYH
-QIPVNRPWNARGGDYSVRDGPMCVDGNKGSQLNYEPNSVDGFPKEDRNAAVSGTTTVSGT
-VACHPQEHPNSDFEQPGNFYRTVLSEPEREALIGNIAEHLRQARRDIQERQVKIFYKCDP
-EYGERVARAIGLPTAACYPAKM*'.gsub(/\s/,''),
+       RVVHAKGGGAFGYFEVTHDITRFCKAKLFEKIGKRTPVFARFSTVAGESGSADTRRDPRG
+       FALKFYTEEGNWDMVGNNTPIFFVRDAIKFPDFIHTQKRHPQTHLHDPNMVWDFFSLVPE
+       SVHQVTFLYTDRGTPDGFRHMNGYGSHTFKFINKDNEAFYVKWHFKTNQGIKNLNRQRAK
+       ELESEDPDYAVRDLFNAIAKREFPSWTFCIQVMPLKDAETYKWNVFDVTKVWPHGDYPLI
+       PVGRLVLDRNPENYFQDVEQAAFAPAHMVPGIEPSEDRMLQGRMFSYIDTHRHRLGANYH
+       QIPVNRPWNARGGDYSVRDGPMCVDGNKGSQLNYEPNSVDGFPKEDRNAAVSGTTTVSGT
+       VACHPQEHPNSDFEQPGNFYRTVLSEPEREALIGNIAEHLRQARRDIQERQVKIFYKCDP
+       EYGERVARAIGLPTAACYPAKM*'.gsub(/\s/,''),
       'plant'
     ) #=> Bio::PSORT::WoLF_PSORT::Report object
     wolf_psort_result.score_hash #=> {'pero' => 8.0, 'nucl' => 2.0, 'mito' => 1.5, 'mito_plas' => 1.5, 'cyto_nucl' => 1.5}
+```
 
-Contributing to bio-wolf_psort_wrapper
+Contributing to ```bio-wolf_psort_wrapper```
 --------------------------------------
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
