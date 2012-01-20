@@ -5,33 +5,35 @@
 
 Gem::Specification.new do |s|
   s.name = "bio-wolf_psort_wrapper"
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ben J Woodcroft"]
-  s.date = "2012-01-14"
-  s.description = "TODO: longer description of your gem"
+  s.date = "2012-01-20"
+  s.description = "Enables the localisation predictor WoLF PSORT to be run locally. The algorithm is available at http://wolfpsort.org/"
   s.email = "donttrustben near gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.mkd"
   ]
   s.files = [
     ".document",
     "Gemfile",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.mkd",
     "Rakefile",
     "VERSION",
+    "bio-wolf_psort_wrapper.gemspec",
     "lib/bio-wolf_psort_wrapper.rb",
+    "lib/bio/appl/psort/wolf_psort_wrapper.rb",
     "test/helper.rb",
     "test/test_bio-wolf_psort_wrapper.rb"
   ]
   s.homepage = "http://github.com/wwood/bioruby-wolf_psort_wrapper"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.14"
-  s.summary = "TODO: one-line summary of your gem"
+  s.rubygems_version = "1.8.11"
+  s.summary = "Enables the localisation predictor WoLF PSORT to be run locally"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
