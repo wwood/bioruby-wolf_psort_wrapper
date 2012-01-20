@@ -1,5 +1,4 @@
 ```bio-wolf_psort_wrapper```
-============================
 
 A wrapper around the protein sub-cellular localisation program WoLF PSORT, so that it can be run locally. More information is about the underlying program is available from http://wolfpsort.org/aboutWoLF_PSORT.html.en and on the same site the executables required for this package to run are provided.
 
