@@ -45,6 +45,13 @@ module Bio
         'plant',
         'fungi'
       ]
+      # Locations for each lineage were taken from Table 1 of:
+      # Paul Horton, Keun-Joon Park, Takeshi Obayashi & Kenta Nakai,
+      # "Protein Subcellular Localization Prediction with WoLF PSORT",
+      # Proceedings of the 4th Annual Asia Pacific Bioinformatics Conference APBC06, Taipei, Taiwan. pp. 39-48, 2006.)
+      ANIMAL_LOCATIONS = LOCATIONS.reject{|l| l=='chlo'}
+      FUNGI_LOCATIONS = LOCATIONS.reject{|l| l=='chlo' or l=='lyso'}
+      ANIMAL_LOCATIONS = LOCATIONS.reject{|l| l=='lyso'}
       
       class Report
         # Name of the sequence that has been analyzed, according
