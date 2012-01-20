@@ -51,7 +51,7 @@ module Bio
       # Proceedings of the 4th Annual Asia Pacific Bioinformatics Conference APBC06, Taipei, Taiwan. pp. 39-48, 2006.)
       ANIMAL_LOCATIONS = LOCATIONS.reject{|l| l=='chlo'}
       FUNGI_LOCATIONS = LOCATIONS.reject{|l| l=='chlo' or l=='lyso'}
-      ANIMAL_LOCATIONS = LOCATIONS.reject{|l| l=='lyso'}
+      PLANT_LOCATIONS = LOCATIONS.reject{|l| l=='lyso'}
       
       class Report
         # Name of the sequence that has been analyzed, according
