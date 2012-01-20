@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "bio-wolf_psort_wrapper"
   gem.homepage = "http://github.com/wwood/bioruby-wolf_psort_wrapper"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Enables the localisation predictor WoLF PSORT to be run locally}
+  gem.description = %Q{Enables the localisation predictor WoLF PSORT to be run locally. The algorithm is available at http://wolfpsort.org/}
   gem.email = "donttrustben near gmail.com"
   gem.authors = ["Ben J Woodcroft"]
   # dependencies defined in Gemfile
